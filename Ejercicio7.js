@@ -5,6 +5,12 @@ class Controller {
     showElement(elementType) {
         $(elementType).show();
     }
+    showHideElement(elementType) {
+        if ($(elementType).is(':visible'))
+            this.hideElement(elementType);
+        else
+            this.showElement(elementType);
+    }
     randomizeText(...textElements) {
         textElements.forEach(element => {
             const r = Math.random().toString(36).substring(7);
@@ -28,11 +34,11 @@ class Controller {
         output.value += report;
         output.scrollTop = output.scrollHeight;
     }
-    showTableInfo(){
+    showTableInfo() {
         const rowNumber = $('tr').length;
         const colNumber = $('td').length;
         const output = $('textarea')[0];
-        output.value += `La tabla tiene un total de ${rowNumber} filas y ${colNumber} columnas\n`
+        output.value += `La tabla tiene un total de ${rowNumber} filas y ${colNumber} columnas\n`;
         output.scrollTop = output.scrollHeight;
     }
 }

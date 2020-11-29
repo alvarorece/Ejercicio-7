@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="Ejercicio7.js"></script>
+    <title>Ejercicio 7</title>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
         <header>
             <h2>Mando de la web</h2>
         </header>
-        <button id="tarea1" onmouseup="controller.hideElement('h1')" onmousedown="controller.showElement('h1')">Tarea 1</button>
+        <button id="tarea1" onclick="controller.showHideElement('h1')">Tarea 1</button>
         <button onclick="controller.randomizeText('td','h2')">Tarea 2</button>
         <button onclick="controller.addRow(4)">Tarea 3</button>
         <button onclick="controller.removeLastRow()">Tarea 4</button>
@@ -63,7 +64,7 @@
             </header>
         </section>
         <label for="output">Salida</label>
-        <textarea disabled></textarea>
+        <textarea id="output" disabled></textarea>
     </section>
 </body>
 
