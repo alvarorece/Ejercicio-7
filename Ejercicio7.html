@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Ejercicio7.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Página de pruebas JQuery!</h1>
+    </header>
+    <section>
+        <header>
+            <h2>Un h2 típico</h2>
+        </header>
+        <h3>Debajo una tabla típica</h3>
+        <table>
+            <tr>
+                <th>
+                    Tabla
+                </th>
+                <th>
+                    de
+                </th>
+                <th>
+                    pruebas
+                </th>
+                <th>
+                    SEW
+                </th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>21234</td>
+                <td>2</td>
+                <td>df0</td>
+                <td>4123</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <header>
+            <h2>Mando de la web</h2>
+        </header>
+        <button id="tarea1" onmouseup="controller.hideElement('h1')" onmousedown="controller.showElement('h1')">Tarea 1</button>
+        <button onclick="controller.randomizeText('td','h2')">Tarea 2</button>
+        <button onclick="controller.addRow(4)">Tarea 3</button>
+        <button onclick="controller.removeLastRow()">Tarea 4</button>
+        <button onclick="controller.DOMReport()">Tarea 5</button>
+        <button onclick="controller.showTableInfo()">Tarea 6</button>
+        <section>
+            <header>
+                <h3>Salida</h3>
+            </header>
+        </section>
+        <label for="output">Salida</label>
+        <textarea disabled></textarea>
+    </section>
+</body>
+
+</html>
